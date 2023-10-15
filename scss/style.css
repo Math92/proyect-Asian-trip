@@ -15,40 +15,27 @@ body {
   margin: 0;
 }
 body header {
-  background-color: brown;
-  width: 100vw;
-  height: 15vh;
+  background-image: linear-gradient(to right, red, yellow);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
-}
-body header nav.navbar, body header nav.navbar-expand-lg, body header nav.bg-body-tertiary {
-  width: 97%;
-  margin: 0rem 3%;
-  padding: 0;
-}
-body header nav.navbar div.container-fluid, body header nav.navbar-expand-lg div.container-fluid, body header nav.bg-body-tertiary div.container-fluid {
-  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-}
-body header nav.navbar div.container-fluid img, body header nav.navbar-expand-lg div.container-fluid img, body header nav.bg-body-tertiary div.container-fluid img {
-  display: none;
+  padding: 1rem 3rem;
 }
 body main {
   height: 75vh;
   display: grid;
   grid-template-rows: auto auto;
-  grid-gap: 1rem; /* Espacio entre las secciones */
+  grid-gap: 1rem;
+  /* Espacio entre las secciones */
   width: 100vw;
   margin: 1rem;
-  gap: 1rem;
 }
 body main section:first-child {
-  background-size: cover; /* Ajusta la imagen para cubrir completamente el fondo */
+  background-size: cover;
+  /* Ajusta la imagen para cubrir completamente el fondo */
   background-repeat: no-repeat;
-  background-position: center 55%;
+  background-position: center 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +58,7 @@ body main section:first-child nav ul li a.city {
   display: inline;
   font-weight: 900;
   font-size: 1.7rem;
+  max-height: 2rem;
 }
 body main section:first-child nav ul li a.active {
   background-color: #04AA6D;
@@ -132,6 +120,70 @@ body footer p {
   font-weight: 500;
 }
 
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  animation: wipe-cinematic-in 1s forwards;
+}
+@keyframes wipe-cinematic-in {
+  0% {
+    -webkit-clip-path: inset(100% 0 100% 0);
+            clip-path: inset(100% 0 100% 0);
+  }
+  30%, 70% {
+    -webkit-clip-path: inset(10% 0 10% 0);
+            clip-path: inset(10% 0 10% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+.menu [transition-style="in:wipe:cinematic"] {
+  animation-name: wipe-cinematic-in;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
 @media (max-width: 480px) {
   body header {
     background-color: brown;
@@ -142,22 +194,10 @@ body footer p {
     justify-content: center;
     padding: 0 1rem;
   }
-  body header nav.navbar div.container-fluid, body header nav.navbar-expand-lg div.container-fluid, body header nav.bg-body-tertiary div.container-fluid {
-    display: flex;
-    justify-content: space-between;
-  }
-  body header nav.navbar div.container-fluid nav, body header nav.navbar-expand-lg div.container-fluid nav, body header nav.bg-body-tertiary div.container-fluid nav {
-    display: none;
-  }
-  body header nav.navbar div.container-fluid img, body header nav.navbar-expand-lg div.container-fluid img, body header nav.bg-body-tertiary div.container-fluid img {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    z-index: 500;
-  }
   body main {
     width: 100%;
-    max-height: 100vh; /* Ajusta esta altura máxima según tus necesidades */
+    max-height: 100vh;
+    /* Ajusta esta altura máxima según tus necesidades */
     margin: 0.1rem;
     gap: 0.1rem;
     flex-grow: 1;
@@ -199,13 +239,16 @@ body footer p {
     gap: 5px;
   }
   body main section:last-child div h2 {
-    font-size: 1.5rem; /* Tamaño más pequeño en la versión responsive */
+    font-size: 1.5rem;
+    /* Tamaño más pequeño en la versión responsive */
   }
   body main section:last-child div h3 {
-    font-size: 1rem; /* Tamaño más pequeño en la versión responsive */
+    font-size: 1rem;
+    /* Tamaño más pequeño en la versión responsive */
   }
   body main section:last-child div p {
-    font-size: 0.6rem; /* Tamaño más pequeño en la versión responsive */
+    font-size: 0.6rem;
+    /* Tamaño más pequeño en la versión responsive */
   }
   body footer {
     width: 100%;
