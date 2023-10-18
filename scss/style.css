@@ -15,11 +15,11 @@ body {
   min-height: 100vh;
 }
 body header {
-  height: 20vh;
+  height: 25vh;
   background-image: url("/img/WhatsApp Image 2023-10-17 at 7.30.39 PM.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 40%;
+  background-position: center 48%;
   width: 100%;
   align-items: center;
   display: flex;
@@ -27,9 +27,22 @@ body header {
   padding: 1rem 3rem;
 }
 body header button.hamburger {
+  width: 25px;
+  height: 25px;
   top: 5px;
-  padding: 0;
+  left: 5px;
   margin: 0;
+  border-radius: 25%;
+  border: transparent;
+  background-color: transparent;
+}
+body header button.hamburger i:last-child {
+  background-color: white;
+}
+body header button.hamburger img {
+  width: 16px;
+  height: 16px;
+  border-radius: 25%;
 }
 body main {
   display: flex;
@@ -91,7 +104,7 @@ body main section:last-child div {
   flex-direction: column;
 }
 body main section:last-child div h2 {
-  text-align: justify;
+  text-align: center;
   font-size: 3.5rem;
   margin: 0;
   padding: 0;

@@ -32,10 +32,10 @@ function obtenerContenido(enlace) {
     console.log(enlace)
     let contenido = {
         'Corea del Sur': coreaDelSur,
-        'Filipinas' : filipinas,
-        'Indonesia' : indonesia,
-        'Japon' : japon,
-        'Nepal' : nepal
+        'Filipinas': filipinas,
+        'Indonesia': indonesia,
+        'Japon': japon,
+        'Nepal': nepal
     };
 
     return contenido[enlace];
