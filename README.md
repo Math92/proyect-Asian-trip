@@ -30,8 +30,8 @@ Viaja a destinos de ensueño, como:
 
 Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos a través de nuestras redes sociales:
 
-- [Facebook](https://www.facebook.com/) 🌐
-- [Instagram](https://www.instagram.com/) 📷
-- [Twitter](https://www.twitter.com) 🐦
+- [Facebook](https://www.facebook.com/AsianTrip/) 🌐
+- [Instagram](https://www.instagram.com/AsianTrip/) 📷
+- [Twitter](https://www.twitter.com/AsianTrip/) 🐦
 
 ¡Te deseamos un viaje lleno de aventuras y momentos inolvidables con Asian Trip! ✈️🌴
