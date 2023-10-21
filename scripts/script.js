@@ -50,11 +50,11 @@ const firstChildSection = document.querySelector('main > section:first-child');
 
 // Crear un objeto que contenga los fondos correspondientes a cada ciudad
 const cityBackgrounds = {
-    'Corea del Sur': 'url(../img/corea-del-sur.png)',
-    'Filipinas': 'url(../img/filipinas.jpg)',
-    'Indonesia': 'url(../img/indonesia.jpg)',
-    'Japon': 'url(../img/japon2.jpg)',
-    'Nepal': 'url(../img/nepal.jpg)'
+    'Corea del Sur': 'url(/img/corea-del-sur.png)',
+    'Filipinas': 'url(/img/filipinas.jpg)',
+    'Indonesia': 'url(/img/indonesia.jpg)',
+    'Japon': 'url(/img/japon2.jpg)',
+    'Nepal': 'url(/img/nepal.jpg)'
 };
 
 
