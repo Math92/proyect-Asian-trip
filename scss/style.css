@@ -16,24 +16,55 @@ body {
 }
 body header {
   height: 25vh;
-  background-image: url("/img/WhatsApp Image 2023-10-17 at 7.30.39 PM.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 48%;
+  background-image: linear-gradient(to left, red, yellow);
   width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 1rem 3rem;
 }
+body header ul.menu2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  gap: 1rem;
+}
+body header ul.menu2 li {
+  list-style: none;
+}
+body header ul.menu2 li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+body header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+body header div h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+body header div h1 span {
+  color: red;
+}
+body header div img {
+  width: 4rem;
+  height: 4rem;
+}
 body header button.hamburger {
+  display: none;
   width: 25px;
   height: 25px;
   top: 5px;
-  left: 5px;
+  right: 5px;
   margin: 0;
   border-radius: 25%;
-  border: transparent;
+  border: blue;
   background-color: transparent;
 }
 body header button.hamburger i:last-child {
@@ -62,6 +93,7 @@ body main section:first-child {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 14rem;
 }
 body main section:first-child nav ul {
   display: flex;
@@ -205,10 +237,12 @@ body footer section a img {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-size: cover;
-    background-position: center 40%;
+  }
+  body header ul.menu2 {
+    display: none;
   }
   body header button.hamburger {
+    display: flex;
     top: 10px;
   }
   body main {
@@ -223,6 +257,7 @@ body footer section a img {
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 50vh;
   }
   body main section:first-child nav ul {
     display: flex;
@@ -246,6 +281,7 @@ body footer section a img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 50vh;
   }
   body main section:last-child div {
     margin: 0.5rem;
