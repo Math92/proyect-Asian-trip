@@ -16,24 +16,54 @@ body {
 }
 body header {
   height: 25vh;
-  background-image: url("/img/WhatsApp Image 2023-10-17 at 7.30.39 PM.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 48%;
+  background-image: linear-gradient(to right, rgb(237, 237, 31), rgb(252, 74, 74));
   width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 1rem 3rem;
 }
+body header ul.menu2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+body header ul.menu2 li {
+  list-style: none;
+}
+body header ul.menu2 li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: rgb(44, 42, 42);
+  cursor: pointer;
+}
+body header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+body header div h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+body header div h1 span {
+  color: red;
+}
+body header div img {
+  width: 4rem;
+  height: 4rem;
+}
 body header button.hamburger {
+  display: none;
   width: 25px;
   height: 25px;
   top: 5px;
-  left: 5px;
+  right: 5px;
   margin: 0;
   border-radius: 25%;
-  border: transparent;
+  border: blue;
   background-color: transparent;
 }
 body header button.hamburger i:last-child {
@@ -44,11 +74,9 @@ body header button.hamburger img {
   height: 16px;
   border-radius: 25%;
 }
-body footer {
-  background-image: url("/img/asian.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 37%;
+
+footer {
+  background-image: linear-gradient(to left, rgb(237, 237, 31), rgb(252, 74, 74));
   width: 100vw;
   display: flex;
   justify-content: flex-end;
@@ -59,16 +87,17 @@ body footer {
   max-height: 9vh;
   flex-grow: 1;
 }
-body footer section {
+footer section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  margin-right: 1rem;
 }
-body footer section a {
+footer section a {
   cursor: pointer;
 }
-body footer section a img {
+footer section a img {
   border-radius: 15%;
 }
 
@@ -126,10 +155,15 @@ body footer section a img {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-size: cover;
-    background-position: center 40%;
+  }
+  body header ul.menu2 {
+    display: none;
+  }
+  body header ul.menu {
+    display: none;
   }
   body header button.hamburger {
+    display: flex;
     top: 10px;
   }
   body footer {

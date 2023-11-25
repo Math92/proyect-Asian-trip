@@ -13,10 +13,11 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  background-color: rgb(222, 215, 215);
 }
 body header {
   height: 25vh;
-  background-image: linear-gradient(to left, red, yellow);
+  background-image: linear-gradient(to right, rgb(237, 237, 31), rgb(252, 74, 74));
   width: 100%;
   align-items: center;
   display: flex;
@@ -27,7 +28,6 @@ body header ul.menu2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
   gap: 1rem;
 }
 body header ul.menu2 li {
@@ -35,8 +35,8 @@ body header ul.menu2 li {
 }
 body header ul.menu2 li a {
   text-decoration: none;
-  font-size: 1.5rem;
-  color: black;
+  font-size: 1.1rem;
+  color: rgb(44, 42, 42);
   cursor: pointer;
 }
 body header div {
@@ -156,10 +156,7 @@ body main section:last-child div p {
   padding: 0;
 }
 body footer {
-  background-image: url("/img/asian.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 37%;
+  background-image: linear-gradient(to left, rgb(237, 237, 31), rgb(252, 74, 74));
   width: 100vw;
   display: flex;
   justify-content: flex-end;
@@ -174,7 +171,8 @@ body footer section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  margin-right: 1rem;
 }
 body footer section a {
   cursor: pointer;
@@ -306,7 +304,6 @@ body footer section a img {
     align-items: center;
     min-height: 6vh;
     max-height: 6vh;
-    background-position: center 27%;
   }
   body footer section {
     display: flex;

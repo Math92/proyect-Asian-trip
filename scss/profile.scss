@@ -20,24 +20,62 @@ body {
 
     header {
         height: 25vh;
-        background-image: url('/img/WhatsApp\ Image\ 2023-10-17\ at\ 7.30.39\ PM.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 48%;
+        background-image: linear-gradient(to right, rgb(237, 237, 31), rgb(252, 74, 74));
         width: 100%;
         align-items: center;
         display: flex;
         justify-content: space-between;
         padding: 1rem 3rem;
 
+        ul.menu2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // color: black;
+            gap: 1rem;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    color: rgb(44, 42, 42);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        div.logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 900;
+
+                span {
+                    color: red;
+                }
+            }
+
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+
         button.hamburger {
+            display: none;
             width: 25px;
             height: 25px;
             top: 5px;
-            left: 5px;
+            right: 5px;
             margin: 0;
             border-radius: 25%;
-            border: transparent;
+            border: blue;
             background-color: transparent;
 
             i:last-child {
@@ -51,38 +89,36 @@ body {
             }
         }
     }
+}
 
-    footer {
-        background-image: url('/img/asian.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 37%;
-        width: 100vw;
+footer {
+    background-image: linear-gradient(to left, rgb(237, 237, 31), rgb(252, 74, 74));
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem;
+    min-height: 8vh;
+    margin-top: 1rem;
+    max-height: 9vh;
+    flex-grow: 1;
+
+    section {
         display: flex;
-        justify-content: flex-end;
         align-items: center;
-        padding: 0.5rem;
-        min-height: 8vh;
-        margin-top: 1rem; 
-        max-height: 9vh;
-        flex-grow: 1;
+        justify-content: center;
+        gap: 0.5rem;
 
-        section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
+        a {
+            cursor: pointer;
 
-            a {
-                cursor: pointer;
-
-                img {
-                    border-radius: 15%;
-                }
+            img {
+                border-radius: 15%;
             }
         }
     }
 }
+
 
 .menuItem {
     display: block;
@@ -142,11 +178,14 @@ body {
             align-items: center;
             justify-content: space-between;
             padding: 0 1rem;
-            background-size: cover;
-            background-position: center 40%;
+
+            ul.menu2 {
+                display: none;
+            }
 
             button.hamburger {
-                top: 10px;      
+                display: flex;
+                top: 10px;
             }
         }
 
@@ -164,10 +203,10 @@ body {
                 align-items: center;
                 justify-content: center;
                 gap: 0.5rem;
-    
+
                 a {
                     cursor: pointer;
-    
+
                     img {
                         width: 25px;
                         height: 25px;

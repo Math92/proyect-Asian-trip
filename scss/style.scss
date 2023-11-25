@@ -16,15 +16,13 @@ body {
     padding: 0;
     margin: 0;
     min-height: 100vh;
+    background-color: $background-body;
 
 
     header {
         height: 25vh;
-        // background-image: url('/img/WhatsApp\ Image\ 2023-10-17\ at\ 7.30.39\ PM.jpg');
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // background-position: center 48%;
-        background-image: linear-gradient(to left, red , yellow);        width: 100%;
+        background-image: linear-gradient(to right, rgb(237, 237, 31), rgb(252, 74, 74));
+        width: 100%;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -34,16 +32,16 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: black;
+            // color: black;
             gap: 1rem;
 
             li {
                 list-style: none;
-                
+
                 a {
                     text-decoration: none;
-                    font-size: 1.5rem;
-                    color: black;
+                    font-size: 1.1rem;
+                    color: rgb(44, 42, 42);
                     cursor: pointer;
                 }
             }
@@ -58,7 +56,7 @@ body {
             h1 {
                 font-size: 2rem;
                 font-weight: 900;
-                
+
                 span {
                     color: red;
                 }
@@ -102,7 +100,7 @@ body {
         flex-grow: 1;
         width: 100vw;
         margin: 1rem;
-        
+
 
         section:first-child {
             background-size: cover;
@@ -113,7 +111,7 @@ body {
             align-items: center;
             width: 100%;
             min-height: 14rem;
-            
+
 
             nav {
                 ul {
@@ -147,7 +145,7 @@ body {
         }
 
         section:last-child {
-            width: 90%; 
+            width: 90%;
             margin: 0 5%;
             display: flex;
             justify-content: center;
@@ -193,17 +191,14 @@ body {
     }
 
     footer {
-        background-image: url('/img/asian.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 37%;
+        background-image: linear-gradient(to left, rgb(237, 237, 31), rgb(252, 74, 74));
         width: 100vw;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         padding: 0.5rem;
         min-height: 8vh;
-        margin-top: 1rem; 
+        margin-top: 1rem;
         max-height: 9vh;
         flex-grow: 1;
 
@@ -211,11 +206,12 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
+            gap: 1.5rem;
+            margin-right: 1rem;
 
             a {
                 cursor: pointer;
-
+                
                 img {
                     border-radius: 15%;
                 }
@@ -282,8 +278,6 @@ body {
             align-items: center;
             justify-content: space-between;
             padding: 0 1rem;
-            // background-size: cover;
-            // background-position: center 40%;
 
             ul.menu2 {
                 display: none;
@@ -291,7 +285,7 @@ body {
 
             button.hamburger {
                 display: flex;
-                top: 10px;      
+                top: 10px;
             }
         }
 
@@ -374,17 +368,16 @@ body {
             align-items: center;
             min-height: 6vh;
             max-height: 6vh;
-            background-position: center 27%;
 
             section {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 0.5rem;
-    
+
                 a {
                     cursor: pointer;
-    
+
                     img {
                         width: 25px;
                         height: 25px;
