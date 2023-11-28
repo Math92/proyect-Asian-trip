@@ -227,7 +227,7 @@ body footer section a img {
   transform: translateY(0);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   body header {
     width: 100vw;
     height: 10vh;
